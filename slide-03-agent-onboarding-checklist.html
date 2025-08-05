@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 3: AI Agent Onboarding Checklist - AI Agent Regulation</title>
+    <link rel="stylesheet" href="common-styles.css">
+</head>
+<body>
+    <div class="slide">
+        <header class="slide-header">
+            <div class="slide-header-content">
+                <div>
+                    <span class="slide-number">Slide 03 of 15</span>
+                    <h2 class="slide-title">AI Agent Onboarding Checklist</h2>
+                </div>
+                <div class="slide-navigation">
+                    <button id="prevBtn" class="nav-button">← Previous</button>
+                    <button id="homeBtn" class="nav-button">⌂ Home</button>
+                    <button id="nextBtn" class="nav-button">Next →</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="slide-content">
+            <section class="content-section">
+                <h1>AI Agent Onboarding Checklist</h1>
+                <p class="lead">A practical step-by-step guide for onboarding new AI agents in compliance with current enforceable regulations</p>
+                
+                <div class="alert alert-danger">
+                    <span style="font-size: 24px;">⚠️</span>
+                    <div>
+                        <strong>CRITICAL:</strong> As of July 2025, these steps are LEGALLY REQUIRED. Failure to complete this checklist may result in immediate regulatory action and fines.
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>📋 Pre-Deployment Assessment</h2>
+                <div class="requirement-box">
+                    <h4>Phase 1: Risk Classification (Days 1-3)</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>☐</th>
+                                <th>Task</th>
+                                <th>Responsible</th>
+                                <th>Documentation Required</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Classify agent risk level</strong> per EU AI Act Article 6</td>
+                                <td>AI Risk Officer</td>
+                                <td>Risk Assessment Form (AI-RA-001)</td>
+                            </tr>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Determine applicable regulations</strong> (EU, US, sector-specific)</td>
+                                <td>Legal/Compliance</td>
+                                <td>Regulatory Mapping Document</td>
+                            </tr>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Identify data processing scope</strong> and privacy implications</td>
+                                <td>Data Protection Officer</td>
+                                <td>DPIA (if personal data involved)</td>
+                            </tr>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Document agent capabilities</strong> and autonomous decision boundaries</td>
+                                <td>Product Owner</td>
+                                <td>Technical Specification Document</td>
+                            </tr>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Assess cross-border operations</strong> if applicable</td>
+                                <td>Legal</td>
+                                <td>Jurisdictional Analysis</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>🔒 Security & Isolation Setup</h2>
+                <div class="implementation-box">
+                    <h4>Phase 2: Technical Implementation (Days 4-7)</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>☐</th>
+                                <th>Task</th>
+                                <th>Technical Lead</th>
+                                <th>Verification Method</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Create isolated namespace</strong> for agent</td>
+                                <td>DevOps</td>
+                                <td>Namespace isolation test</td>
+                            </tr>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Configure resource quotas</strong> (CPU, memory, storage)</td>
+                                <td>DevOps</td>
+                                <td>Resource limit verification</td>
+                            </tr>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Set up encryption</strong> for data at rest and in transit</td>
+                                <td>Security Eng</td>
+                                <td>Encryption audit</td>
+                            </tr>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Implement access controls</strong> (RBAC/ABAC)</td>
+                                <td>Security Eng</td>
+                                <td>Access control matrix test</td>
+                            </tr>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Configure network policies</strong> and firewall rules</td>
+                                <td>Network Eng</td>
+                                <td>Network penetration test</td>
+                            </tr>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Enable audit logging</strong> at all levels</td>
+                                <td>DevOps</td>
+                                <td>Log integrity verification</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>📊 Monitoring & Observability</h2>
+                <div class="requirement-box">
+                    <h4>Phase 3: Compliance Infrastructure (Days 8-10)</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>☐</th>
+                                <th>Task</th>
+                                <th>Owner</th>
+                                <th>Success Criteria</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Connect to LangSmith</strong> for trace collection</td>
+                                <td>ML Engineer</td>
+                                <td>100% trace capture rate</td>
+                            </tr>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Configure performance metrics</strong> collection</td>
+                                <td>SRE</td>
+                                <td>All KPIs monitored</td>
+                            </tr>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Set up alerting rules</strong> for anomalies</td>
+                                <td>SRE</td>
+                                <td>Alert response < 5min</td>
+                            </tr>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Implement decision logging</strong> per Article 12</td>
+                                <td>ML Engineer</td>
+                                <td>Complete decision trail</td>
+                            </tr>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Enable compliance dashboards</strong></td>
+                                <td>Compliance</td>
+                                <td>Real-time visibility</td>
+                            </tr>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Configure data retention</strong> policies</td>
+                                <td>Data Eng</td>
+                                <td>Automated lifecycle</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>🧪 Testing & Validation</h2>
+                <div class="implementation-box">
+                    <h4>Phase 4: Safety & Compliance Testing (Days 11-14)</h4>
+                    <div class="grid">
+                        <div class="grid-item">
+                            <h4>☐ Red Team Testing</h4>
+                            <ul>
+                                <li>Adversarial prompt testing</li>
+                                <li>Jailbreak attempt scenarios</li>
+                                <li>Data exfiltration tests</li>
+                                <li>Cross-agent contamination tests</li>
+                            </ul>
+                        </div>
+                        <div class="grid-item">
+                            <h4>☐ Performance Testing</h4>
+                            <ul>
+                                <li>Load testing at scale</li>
+                                <li>Resource consumption limits</li>
+                                <li>Failover and recovery</li>
+                                <li>Latency benchmarks</li>
+                            </ul>
+                        </div>
+                        <div class="grid-item">
+                            <h4>☐ Compliance Validation</h4>
+                            <ul>
+                                <li>EU AI Act requirements check</li>
+                                <li>Transparency obligations test</li>
+                                <li>Human oversight capabilities</li>
+                                <li>Explainability verification</li>
+                            </ul>
+                        </div>
+                        <div class="grid-item">
+                            <h4>☐ Integration Testing</h4>
+                            <ul>
+                                <li>API contract validation</li>
+                                <li>Database transaction integrity</li>
+                                <li>Event streaming reliability</li>
+                                <li>Error handling scenarios</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>📝 Documentation & Training</h2>
+                <div class="requirement-box">
+                    <h4>Phase 5: Operational Readiness (Days 15-17)</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>☐</th>
+                                <th>Document/Training</th>
+                                <th>Target Audience</th>
+                                <th>Completion Criteria</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Technical documentation</strong> per Article 11</td>
+                                <td>Engineering</td>
+                                <td>ISO 42001 compliant</td>
+                            </tr>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>User instructions</strong> and limitations</td>
+                                <td>End Users</td>
+                                <td>Plain language, accessible</td>
+                            </tr>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Incident response procedures</strong></td>
+                                <td>Operations</td>
+                                <td>Tested and validated</td>
+                            </tr>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Human oversight training</strong></td>
+                                <td>Operators</td>
+                                <td>100% completion rate</td>
+                            </tr>
+                            <tr>
+                                <td>☐</td>
+                                <td><strong>Compliance procedures</strong></td>
+                                <td>All Staff</td>
+                                <td>Acknowledged by all</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>✅ Final Approval & Launch</h2>
+                <div class="alert alert-warning">
+                    <span style="font-size: 24px;">🔐</span>
+                    <div>
+                        <strong>Launch Gate Requirements:</strong> ALL items must be checked and documented before production deployment.
+                    </div>
+                </div>
+                
+                <div class="grid" style="margin-top: 20px;">
+                    <div class="requirement-box">
+                        <h4>☐ Executive Sign-offs</h4>
+                        <ul>
+                            <li>☐ Chief Technology Officer</li>
+                            <li>☐ Chief Information Security Officer</li>
+                            <li>☐ Chief Compliance Officer</li>
+                            <li>☐ Data Protection Officer</li>
+                            <li>☐ Legal Counsel</li>
+                        </ul>
+                    </div>
+                    <div class="requirement-box">
+                        <h4>☐ Compliance Certifications</h4>
+                        <ul>
+                            <li>☐ Risk assessment complete</li>
+                            <li>☐ CE marking (if high-risk)</li>
+                            <li>☐ ISO 42001 alignment verified</li>
+                            <li>☐ Third-party audit (if required)</li>
+                            <li>☐ Insurance coverage confirmed</li>
+                        </ul>
+                    </div>
+                    <div class="requirement-box">
+                        <h4>☐ Operational Readiness</h4>
+                        <ul>
+                            <li>☐ 24/7 monitoring active</li>
+                            <li>☐ Incident response team ready</li>
+                            <li>☐ Rollback procedures tested</li>
+                            <li>☐ Communication plan approved</li>
+                            <li>☐ Post-launch review scheduled</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>🔄 Post-Launch Requirements</h2>
+                <div class="implementation-box">
+                    <h4>Ongoing Compliance (Continuous)</h4>
+                    <div class="grid">
+                        <div class="grid-item">
+                            <h4>Daily Tasks</h4>
+                            <ul>
+                                <li>Monitor compliance dashboards</li>
+                                <li>Review automated alerts</li>
+                                <li>Check audit log integrity</li>
+                                <li>Verify isolation boundaries</li>
+                            </ul>
+                        </div>
+                        <div class="grid-item">
+                            <h4>Weekly Tasks</h4>
+                            <ul>
+                                <li>Performance review meeting</li>
+                                <li>Incident report analysis</li>
+                                <li>User feedback review</li>
+                                <li>Compliance metrics report</li>
+                            </ul>
+                        </div>
+                        <div class="grid-item">
+                            <h4>Monthly Tasks</h4>
+                            <ul>
+                                <li>Full compliance audit</li>
+                                <li>Red team exercise</li>
+                                <li>Documentation updates</li>
+                                <li>Training refresher</li>
+                            </ul>
+                        </div>
+                        <div class="grid-item">
+                            <h4>Quarterly Tasks</h4>
+                            <ul>
+                                <li>Third-party assessment</li>
+                                <li>Risk reassessment</li>
+                                <li>Policy review & update</li>
+                                <li>Regulatory change analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-success" style="margin-top: 20px;">
+                    <span style="font-size: 24px;">✅</span>
+                    <div>
+                        <strong>Success Metric:</strong> Agent onboarding completed in 17-20 business days with 100% checklist completion and zero compliance gaps.
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+
+        <div class="keyboard-hint">
+            Use ← → arrows to navigate • ESC to return to index
+        </div>
+    </div>
+
+    <script src="slide-navigation.js"></script>
+    <script>
+        const navigation = new SlideNavigation(3, 15);
+    </script>
+</body>
+</html>

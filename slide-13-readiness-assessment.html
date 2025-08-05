@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 13: Readiness Assessment - AI Agent Regulation</title>
+    <link rel="stylesheet" href="common-styles.css">
+</head>
+<body>
+    <div class="slide">
+        <header class="slide-header">
+            <div class="slide-header-content">
+                <div>
+                    <span class="slide-number">Slide 13 of 15</span>
+                    <h2 class="slide-title">Readiness Assessment</h2>
+                </div>
+                <div class="slide-navigation">
+                    <button id="prevBtn" class="nav-button">← Previous</button>
+                    <button id="homeBtn" class="nav-button">⌂ Home</button>
+                    <button id="nextBtn" class="nav-button">Next →</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="slide-content">
+            <section class="content-section">
+                <h1>Evaluate Your Current Compliance Posture</h1>
+                <p class="lead">A comprehensive assessment to identify gaps and prioritize actions for achieving AI compliance</p>
+                
+                <div class="alert alert-danger">
+                    <span style="font-size: 24px;">⚠️</span>
+                    <div>
+                        <strong>Critical Timing:</strong> With regulations actively enforced since early 2025, every organization deploying AI agents needs immediate assessment. Non-compliance is no longer a future risk - it's a present danger.
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>🎯 Self-Assessment Checklist</h2>
+                <div class="implementation-box">
+                    <h4>Rate Your Organization (1-5 Scale)</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 40%;">Assessment Area</th>
+                                <th style="width: 10%;">Score</th>
+                                <th style="width: 25%;">Current State</th>
+                                <th style="width: 25%;">Required State</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>AI Inventory & Classification</strong></td>
+                                <td>
+                                    <select style="padding: 4px;">
+                                        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                                    </select>
+                                </td>
+                                <td>Do you know all AI agents in production?</td>
+                                <td>Complete inventory with risk classification</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Risk Assessment Process</strong></td>
+                                <td>
+                                    <select style="padding: 4px;">
+                                        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                                    </select>
+                                </td>
+                                <td>Ad-hoc or informal assessment?</td>
+                                <td>Documented, repeatable process</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Human Oversight Capability</strong></td>
+                                <td>
+                                    <select style="padding: 4px;">
+                                        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                                    </select>
+                                </td>
+                                <td>Can humans intervene in real-time?</td>
+                                <td>Override controls on all agents</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Transparency & Disclosure</strong></td>
+                                <td>
+                                    <select style="padding: 4px;">
+                                        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                                    </select>
+                                </td>
+                                <td>Do users know they're interacting with AI?</td>
+                                <td>Clear disclosure on all interactions</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Logging & Audit Trail</strong></td>
+                                <td>
+                                    <select style="padding: 4px;">
+                                        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                                    </select>
+                                </td>
+                                <td>Partial or incomplete logging?</td>
+                                <td>100% decision traceability</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Technical Documentation</strong></td>
+                                <td>
+                                    <select style="padding: 4px;">
+                                        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                                    </select>
+                                </td>
+                                <td>Basic or outdated docs?</td>
+                                <td>Complete Article 11 compliance</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Governance</strong></td>
+                                <td>
+                                    <select style="padding: 4px;">
+                                        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                                    </select>
+                                </td>
+                                <td>Unclear data handling practices?</td>
+                                <td>Documented data quality process</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Security & Isolation</strong></td>
+                                <td>
+                                    <select style="padding: 4px;">
+                                        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                                    </select>
+                                </td>
+                                <td>Shared resources between agents?</td>
+                                <td>Complete agent isolation</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div style="margin-top: 20px; padding: 20px; background: rgba(37, 99, 235, 0.1); border-radius: 8px;">
+                        <h4 style="color: #60a5fa;">Scoring Guide:</h4>
+                        <p><strong>32-40:</strong> Well-prepared, minor adjustments needed</p>
+                        <p><strong>24-31:</strong> Significant gaps, immediate action required</p>
+                        <p><strong>16-23:</strong> High risk, comprehensive overhaul needed</p>
+                        <p><strong>8-15:</strong> Critical non-compliance, emergency response required</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>🔍 Gap Analysis Matrix</h2>
+                <div class="diagram-container">
+                    <svg width="900" height="500" viewBox="0 0 900 500">
+                        <rect width="900" height="500" fill="#0f172a" />
+                        
+                        <text x="450" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#e2e8f0">
+                            Compliance Gap Prioritization
+                        </text>
+                        
+                        <!-- Axes -->
+                        <line x1="100" y1="420" x2="800" y2="420" stroke="#475569" stroke-width="2" />
+                        <line x1="100" y1="420" x2="100" y2="80" stroke="#475569" stroke-width="2" />
+                        
+                        <!-- X-axis labels -->
+                        <text x="450" y="460" text-anchor="middle" font-size="16" fill="#94a3b8">Implementation Effort →</text>
+                        <text x="200" y="445" text-anchor="middle" font-size="12" fill="#94a3b8">Low</text>
+                        <text x="450" y="445" text-anchor="middle" font-size="12" fill="#94a3b8">Medium</text>
+                        <text x="700" y="445" text-anchor="middle" font-size="12" fill="#94a3b8">High</text>
+                        
+                        <!-- Y-axis labels -->
+                        <text x="40" y="250" text-anchor="middle" font-size="16" fill="#94a3b8" transform="rotate(-90 40 250)">Risk Impact →</text>
+                        <text x="80" y="380" text-anchor="end" font-size="12" fill="#94a3b8">Low</text>
+                        <text x="80" y="250" text-anchor="end" font-size="12" fill="#94a3b8">Medium</text>
+                        <text x="80" y="120" text-anchor="end" font-size="12" fill="#94a3b8">High</text>
+                        
+                        <!-- Quadrants -->
+                        <rect x="100" y="80" width="350" height="170" fill="rgba(239, 68, 68, 0.1)" stroke="#ef4444" stroke-width="1" stroke-dasharray="5,5" />
+                        <text x="275" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#ef4444">Quick Wins</text>
+                        <text x="275" y="125" text-anchor="middle" font-size="12" fill="#fca5a5">High Impact, Low Effort</text>
+                        
+                        <rect x="450" y="80" width="350" height="170" fill="rgba(245, 158, 11, 0.1)" stroke="#f59e0b" stroke-width="1" stroke-dasharray="5,5" />
+                        <text x="625" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#f59e0b">Strategic Projects</text>
+                        <text x="625" y="125" text-anchor="middle" font-size="12" fill="#fcd34d">High Impact, High Effort</text>
+                        
+                        <rect x="100" y="250" width="350" height="170" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="1" stroke-dasharray="5,5" />
+                        <text x="275" y="275" text-anchor="middle" font-size="14" font-weight="bold" fill="#10b981">Fill-ins</text>
+                        <text x="275" y="295" text-anchor="middle" font-size="12" fill="#86efac">Low Impact, Low Effort</text>
+                        
+                        <rect x="450" y="250" width="350" height="170" fill="rgba(156, 163, 175, 0.1)" stroke="#9ca3af" stroke-width="1" stroke-dasharray="5,5" />
+                        <text x="625" y="275" text-anchor="middle" font-size="14" font-weight="bold" fill="#e5e7eb">Question Value</text>
+                        <text x="625" y="295" text-anchor="middle" font-size="12" fill="#d1d5db">Low Impact, High Effort</text>
+                        
+                        <!-- Gap items plotted -->
+                        <g>
+                            <!-- Quick Wins -->
+                            <circle cx="200" cy="150" r="15" fill="#ef4444" opacity="0.8" />
+                            <text x="200" y="155" text-anchor="middle" font-size="10" fill="white">AI Labels</text>
+                            
+                            <circle cx="300" cy="180" r="15" fill="#ef4444" opacity="0.8" />
+                            <text x="300" y="185" text-anchor="middle" font-size="10" fill="white">Logging</text>
+                            
+                            <circle cx="250" cy="120" r="15" fill="#ef4444" opacity="0.8" />
+                            <text x="250" y="125" text-anchor="middle" font-size="10" fill="white">Consent</text>
+                            
+                            <!-- Strategic Projects -->
+                            <circle cx="650" cy="140" r="20" fill="#f59e0b" opacity="0.8" />
+                            <text x="650" y="145" text-anchor="middle" font-size="10" fill="white">Isolation</text>
+                            
+                            <circle cx="550" cy="170" r="18" fill="#f59e0b" opacity="0.8" />
+                            <text x="550" y="175" text-anchor="middle" font-size="10" fill="white">Monitoring</text>
+                            
+                            <circle cx="720" cy="190" r="18" fill="#f59e0b" opacity="0.8" />
+                            <text x="720" y="195" text-anchor="middle" font-size="10" fill="white">Risk Mgmt</text>
+                            
+                            <!-- Fill-ins -->
+                            <circle cx="200" cy="350" r="12" fill="#10b981" opacity="0.8" />
+                            <text x="200" y="355" text-anchor="middle" font-size="10" fill="white">Docs</text>
+                            
+                            <circle cx="300" cy="320" r="12" fill="#10b981" opacity="0.8" />
+                            <text x="300" y="325" text-anchor="middle" font-size="10" fill="white">Training</text>
+                            
+                            <!-- Question Value -->
+                            <circle cx="650" cy="350" r="10" fill="#9ca3af" opacity="0.8" />
+                            <text x="650" y="355" text-anchor="middle" font-size="10" fill="white">Custom</text>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>💡 Readiness Level Assessment</h2>
+                <div class="grid">
+                    <div class="requirement-box">
+                        <h4>Level 1: Non-Compliant 🔴</h4>
+                        <ul>
+                            <li>No AI inventory or governance</li>
+                            <li>No risk assessment process</li>
+                            <li>Missing basic controls</li>
+                            <li>No documentation</li>
+                        </ul>
+                        <p style="margin-top: 10px; color: #ef4444;"><strong>Action:</strong> Emergency response required</p>
+                        <p style="color: #ef4444;">Timeline: Start immediately</p>
+                    </div>
+                    
+                    <div class="requirement-box">
+                        <h4>Level 2: High Risk 🟠</h4>
+                        <ul>
+                            <li>Partial AI inventory</li>
+                            <li>Informal risk process</li>
+                            <li>Some controls in place</li>
+                            <li>Basic documentation</li>
+                        </ul>
+                        <p style="margin-top: 10px; color: #f59e0b;"><strong>Action:</strong> Comprehensive upgrade needed</p>
+                        <p style="color: #f59e0b;">Timeline: 60-90 days</p>
+                    </div>
+                    
+                    <div class="requirement-box">
+                        <h4>Level 3: Moderate 🟡</h4>
+                        <ul>
+                            <li>Complete inventory</li>
+                            <li>Documented processes</li>
+                            <li>Most controls implemented</li>
+                            <li>Good documentation</li>
+                        </ul>
+                        <p style="margin-top: 10px; color: #fbbf24;"><strong>Action:</strong> Close remaining gaps</p>
+                        <p style="color: #fbbf24;">Timeline: 30-45 days</p>
+                    </div>
+                    
+                    <div class="requirement-box">
+                        <h4>Level 4: Compliant 🟢</h4>
+                        <ul>
+                            <li>Full governance in place</li>
+                            <li>Automated controls</li>
+                            <li>Complete documentation</li>
+                            <li>Continuous improvement</li>
+                        </ul>
+                        <p style="margin-top: 10px; color: #10b981;"><strong>Action:</strong> Maintain and optimize</p>
+                        <p style="color: #10b981;">Timeline: Ongoing</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>📋 Immediate Action Plan</h2>
+                <div class="implementation-box">
+                    <h4>Based on Your Assessment, Take These Steps</h4>
+                    <div class="grid">
+                        <div class="grid-item">
+                            <h4>🚨 If Score < 16 (Critical)</h4>
+                            <ol>
+                                <li><strong>TODAY:</strong> Pause high-risk AI deployments</li>
+                                <li><strong>This Week:</strong> Emergency risk assessment</li>
+                                <li><strong>Week 2:</strong> Implement basic controls</li>
+                                <li><strong>Week 3:</strong> Begin comprehensive upgrade</li>
+                                <li><strong>Week 4:</strong> Executive briefing on gaps</li>
+                            </ol>
+                            <div class="alert alert-danger" style="margin-top: 10px;">
+                                <strong>Warning:</strong> You are actively exposed to regulatory action
+                            </div>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <h4>⚠️ If Score 16-31 (High Risk)</h4>
+                            <ol>
+                                <li><strong>Week 1:</strong> Complete gap analysis</li>
+                                <li><strong>Week 2:</strong> Prioritize quick wins</li>
+                                <li><strong>Week 3-4:</strong> Implement critical controls</li>
+                                <li><strong>Month 2:</strong> Deploy monitoring</li>
+                                <li><strong>Month 3:</strong> Full compliance push</li>
+                            </ol>
+                            <div class="alert alert-warning" style="margin-top: 10px;">
+                                <strong>Risk:</strong> Vulnerable to enforcement actions
+                            </div>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <h4>✅ If Score > 31 (Good Position)</h4>
+                            <ol>
+                                <li><strong>Week 1:</strong> Validate current state</li>
+                                <li><strong>Week 2-3:</strong> Close minor gaps</li>
+                                <li><strong>Week 4:</strong> Enhance automation</li>
+                                <li><strong>Month 2:</strong> Optimize processes</li>
+                                <li><strong>Ongoing:</strong> Continuous improvement</li>
+                            </ol>
+                            <div class="alert alert-success" style="margin-top: 10px;">
+                                <strong>Status:</strong> Well-positioned for compliance
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>🔧 Quick Win Opportunities</h2>
+                <div class="requirement-box">
+                    <h4>High-Impact, Low-Effort Improvements</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Action</th>
+                                <th>Effort</th>
+                                <th>Impact</th>
+                                <th>Time</th>
+                                <th>Cost</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background: rgba(16, 185, 129, 0.1);">
+                                <td><strong>Add AI disclosure labels</strong></td>
+                                <td>Low</td>
+                                <td>High - Avoid transparency fines</td>
+                                <td>1-2 days</td>
+                                <td>$0</td>
+                            </tr>
+                            <tr style="background: rgba(16, 185, 129, 0.1);">
+                                <td><strong>Enable basic logging</strong></td>
+                                <td>Low</td>
+                                <td>High - Meet Article 12</td>
+                                <td>3-5 days</td>
+                                <td>$500/mo</td>
+                            </tr>
+                            <tr style="background: rgba(16, 185, 129, 0.1);">
+                                <td><strong>Document current agents</strong></td>
+                                <td>Medium</td>
+                                <td>High - Risk visibility</td>
+                                <td>1 week</td>
+                                <td>Internal</td>
+                            </tr>
+                            <tr style="background: rgba(245, 158, 11, 0.1);">
+                                <td><strong>Implement kill switches</strong></td>
+                                <td>Medium</td>
+                                <td>High - Human oversight</td>
+                                <td>2 weeks</td>
+                                <td>$5-10k</td>
+                            </tr>
+                            <tr style="background: rgba(245, 158, 11, 0.1);">
+                                <td><strong>Create audit process</strong></td>
+                                <td>Medium</td>
+                                <td>Medium - Ongoing compliance</td>
+                                <td>2 weeks</td>
+                                <td>Internal</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>📊 Maturity Model Progression</h2>
+                <div class="diagram-container">
+                    <svg width="900" height="300" viewBox="0 0 900 300">
+                        <rect width="900" height="300" fill="#0f172a" />
+                        
+                        <text x="450" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#e2e8f0">
+                            AI Governance Maturity Journey
+                        </text>
+                        
+                        <!-- Maturity levels -->
+                        <g transform="translate(50, 80)">
+                            <!-- Level 1 -->
+                            <rect x="0" y="0" width="160" height="150" fill="rgba(239, 68, 68, 0.1)" stroke="#ef4444" stroke-width="2" rx="8" />
+                            <text x="80" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#ef4444">Level 1: Ad Hoc</text>
+                            <text x="80" y="45" text-anchor="middle" font-size="11" fill="#fca5a5">No formal process</text>
+                            <text x="80" y="60" text-anchor="middle" font-size="11" fill="#fca5a5">Reactive approach</text>
+                            <text x="80" y="75" text-anchor="middle" font-size="11" fill="#fca5a5">High risk exposure</text>
+                            
+                            <!-- Level 2 -->
+                            <rect x="170" y="0" width="160" height="150" fill="rgba(245, 158, 11, 0.1)" stroke="#f59e0b" stroke-width="2" rx="8" />
+                            <text x="250" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#f59e0b">Level 2: Defined</text>
+                            <text x="250" y="45" text-anchor="middle" font-size="11" fill="#fcd34d">Basic processes</text>
+                            <text x="250" y="60" text-anchor="middle" font-size="11" fill="#fcd34d">Some documentation</text>
+                            <text x="250" y="75" text-anchor="middle" font-size="11" fill="#fcd34d">Manual controls</text>
+                            
+                            <!-- Level 3 -->
+                            <rect x="340" y="0" width="160" height="150" fill="rgba(124, 58, 237, 0.1)" stroke="#7c3aed" stroke-width="2" rx="8" />
+                            <text x="420" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#a78bfa">Level 3: Managed</text>
+                            <text x="420" y="45" text-anchor="middle" font-size="11" fill="#c7d2fe">Standardized</text>
+                            <text x="420" y="60" text-anchor="middle" font-size="11" fill="#c7d2fe">Measurable</text>
+                            <text x="420" y="75" text-anchor="middle" font-size="11" fill="#c7d2fe">Proactive</text>
+                            
+                            <!-- Level 4 -->
+                            <rect x="510" y="0" width="160" height="150" fill="rgba(37, 99, 235, 0.1)" stroke="#2563eb" stroke-width="2" rx="8" />
+                            <text x="590" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#60a5fa">Level 4: Optimized</text>
+                            <text x="590" y="45" text-anchor="middle" font-size="11" fill="#93c5fd">Automated</text>
+                            <text x="590" y="60" text-anchor="middle" font-size="11" fill="#93c5fd">Predictive</text>
+                            <text x="590" y="75" text-anchor="middle" font-size="11" fill="#93c5fd">Continuous</text>
+                            
+                            <!-- Level 5 -->
+                            <rect x="680" y="0" width="160" height="150" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="2" rx="8" />
+                            <text x="760" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#34d399">Level 5: Leading</text>
+                            <text x="760" y="45" text-anchor="middle" font-size="11" fill="#86efac">Innovation</text>
+                            <text x="760" y="60" text-anchor="middle" font-size="11" fill="#86efac">Best practice</text>
+                            <text x="760" y="75" text-anchor="middle" font-size="11" fill="#86efac">Industry leader</text>
+                        </g>
+                        
+                        <!-- Progress arrow -->
+                        <g transform="translate(50, 250)">
+                            <line x1="0" y1="0" x2="800" y2="0" stroke="#475569" stroke-width="3" marker-end="url(#arrowhead)" />
+                            <text x="400" y="25" text-anchor="middle" font-size="14" fill="#94a3b8">Your Journey →</text>
+                        </g>
+                        
+                        <!-- Current position indicator -->
+                        <circle cx="270" cy="180" r="20" fill="#f59e0b" opacity="0.8">
+                            <animate attributeName="r" values="20;25;20" dur="2s" repeatCount="indefinite" />
+                        </circle>
+                        <text x="270" y="185" text-anchor="middle" font-size="12" fill="white">You</text>
+                    </svg>
+                </div>
+            </section>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+
+        <div class="keyboard-hint">
+            Use ← → arrows to navigate • ESC to return to index
+        </div>
+    </div>
+
+    <script src="slide-navigation.js"></script>
+    <script>
+        const navigation = new SlideNavigation(13, 15);
+    </script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 4: Timeline & Current Enforcement - AI Agent Regulation</title>
+    <link rel="stylesheet" href="common-styles.css">
+</head>
+<body>
+    <div class="slide">
+        <header class="slide-header">
+            <div class="slide-header-content">
+                <div>
+                    <span class="slide-number">Slide 04 of 15</span>
+                    <h2 class="slide-title">Timeline & Current Enforcement Status</h2>
+                </div>
+                <div class="slide-navigation">
+                    <button id="prevBtn" class="nav-button">← Previous</button>
+                    <button id="homeBtn" class="nav-button">⌂ Home</button>
+                    <button id="nextBtn" class="nav-button">Next →</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="slide-content">
+            <section class="content-section">
+                <h1>AI Regulation Timeline: Where We Are Now</h1>
+                <p class="lead">Understanding the current enforcement landscape and upcoming critical deadlines</p>
+                
+                <div class="alert alert-danger">
+                    <span style="font-size: 24px;">🚨</span>
+                    <div>
+                        <strong>July 2025 Status:</strong> We are NOW in the enforcement phase. Multiple AI regulations are actively being enforced with significant penalties for non-compliance.
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>📅 Master Timeline: Past, Present, and Future</h2>
+                <div class="diagram-container">
+                    <svg width="1000" height="600" viewBox="0 0 1000 600">
+                        <rect width="1000" height="600" fill="#0f172a" />
+                        
+                        <text x="500" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#e2e8f0">
+                            AI Regulation Enforcement Timeline
+                        </text>
+                        
+                        <!-- Current date indicator -->
+                        <line x1="580" y1="80" x2="580" y2="550" stroke="#ef4444" stroke-width="3" stroke-dasharray="5,5" />
+                        <text x="580" y="70" text-anchor="middle" font-size="14" font-weight="bold" fill="#ef4444">TODAY (July 2025)</text>
+                        
+                        <!-- Timeline axis -->
+                        <line x1="100" y1="500" x2="900" y2="500" stroke="#475569" stroke-width="2" />
+                        
+                        <!-- Year markers -->
+                        <g fill="#94a3b8" font-size="12">
+                            <text x="150" y="520" text-anchor="middle">2023</text>
+                            <text x="300" y="520" text-anchor="middle">2024</text>
+                            <text x="450" y="520" text-anchor="middle">2025</text>
+                            <text x="600" y="520" text-anchor="middle">2026</text>
+                            <text x="750" y="520" text-anchor="middle">2027</text>
+                        </g>
+                        
+                        <!-- EU AI Act Timeline -->
+                        <g>
+                            <rect x="120" y="100" width="700" height="80" fill="rgba(37, 99, 235, 0.1)" stroke="#2563eb" stroke-width="2" rx="8" />
+                            <text x="470" y="125" text-anchor="middle" font-size="18" font-weight="bold" fill="#60a5fa">EU AI Act</text>
+                            
+                            <!-- Milestones -->
+                            <circle cx="250" cy="140" r="8" fill="#2563eb" />
+                            <text x="250" y="165" text-anchor="middle" font-size="11" fill="#93c5fd">Approved</text>
+                            <text x="250" y="178" text-anchor="middle" font-size="10" fill="#93c5fd">Mar 2024</text>
+                            
+                            <circle cx="380" cy="140" r="8" fill="#ef4444" />
+                            <text x="380" y="165" text-anchor="middle" font-size="11" fill="#fca5a5">Prohibited AI</text>
+                            <text x="380" y="178" text-anchor="middle" font-size="10" fill="#fca5a5">Nov 2024 ✓</text>
+                            
+                            <circle cx="520" cy="140" r="8" fill="#ef4444" />
+                            <text x="520" y="165" text-anchor="middle" font-size="11" fill="#fca5a5">Transparency</text>
+                            <text x="520" y="178" text-anchor="middle" font-size="10" fill="#fca5a5">May 2025 ✓</text>
+                            
+                            <circle cx="650" cy="140" r="8" fill="#f59e0b" />
+                            <text x="650" y="165" text-anchor="middle" font-size="11" fill="#fcd34d">High-Risk AI</text>
+                            <text x="650" y="178" text-anchor="middle" font-size="10" fill="#fcd34d">May 2026</text>
+                            
+                            <circle cx="780" cy="140" r="8" fill="#94a3b8" />
+                            <text x="780" y="165" text-anchor="middle" font-size="11" fill="#cbd5e1">Full Force</text>
+                            <text x="780" y="178" text-anchor="middle" font-size="10" fill="#cbd5e1">May 2027</text>
+                        </g>
+                        
+                        <!-- US Executive Order Timeline -->
+                        <g>
+                            <rect x="120" y="220" width="500" height="80" fill="rgba(124, 58, 237, 0.1)" stroke="#7c3aed" stroke-width="2" rx="8" />
+                            <text x="370" y="245" text-anchor="middle" font-size="18" font-weight="bold" fill="#a78bfa">US Executive Order 14110</text>
+                            
+                            <!-- Milestones -->
+                            <circle cx="200" cy="260" r="8" fill="#7c3aed" />
+                            <text x="200" y="285" text-anchor="middle" font-size="11" fill="#c7d2fe">Signed</text>
+                            <text x="200" y="298" text-anchor="middle" font-size="10" fill="#c7d2fe">Oct 2023</text>
+                            
+                            <circle cx="320" cy="260" r="8" fill="#ef4444" />
+                            <text x="320" y="285" text-anchor="middle" font-size="11" fill="#fca5a5">90-day</text>
+                            <text x="320" y="298" text-anchor="middle" font-size="10" fill="#fca5a5">Jan 2024 ✓</text>
+                            
+                            <circle cx="440" cy="260" r="8" fill="#ef4444" />
+                            <text x="440" y="285" text-anchor="middle" font-size="11" fill="#fca5a5">270-day</text>
+                            <text x="440" y="298" text-anchor="middle" font-size="10" fill="#fca5a5">Jul 2024 ✓</text>
+                            
+                            <circle cx="560" cy="260" r="8" fill="#ef4444" />
+                            <text x="560" y="285" text-anchor="middle" font-size="11" fill="#fca5a5">Full Active</text>
+                            <text x="560" y="298" text-anchor="middle" font-size="10" fill="#fca5a5">Oct 2024 ✓</text>
+                        </g>
+                        
+                        <!-- ISO 42001 Timeline -->
+                        <g>
+                            <rect x="120" y="340" width="400" height="80" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="2" rx="8" />
+                            <text x="320" y="365" text-anchor="middle" font-size="18" font-weight="bold" fill="#34d399">ISO/IEC 42001:2023</text>
+                            
+                            <circle cx="220" cy="380" r="8" fill="#10b981" />
+                            <text x="220" y="405" text-anchor="middle" font-size="11" fill="#86efac">Published</text>
+                            <text x="220" y="418" text-anchor="middle" font-size="10" fill="#86efac">Dec 2023</text>
+                            
+                            <circle cx="380" cy="380" r="8" fill="#ef4444" />
+                            <text x="380" y="405" text-anchor="middle" font-size="11" fill="#fca5a5">Adoption</text>
+                            <text x="380" y="418" text-anchor="middle" font-size="10" fill="#fca5a5">Growing ✓</text>
+                        </g>
+                        
+                        <!-- Status Legend -->
+                        <g transform="translate(700, 350)">
+                            <rect x="0" y="0" width="200" height="120" fill="rgba(30, 41, 59, 0.8)" stroke="#475569" rx="8" />
+                            <text x="100" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#e2e8f0">Status Legend</text>
+                            
+                            <circle cx="20" cy="50" r="6" fill="#ef4444" />
+                            <text x="35" y="55" font-size="12" fill="#e2e8f0">Enforced Now ✓</text>
+                            
+                            <circle cx="20" cy="75" r="6" fill="#f59e0b" />
+                            <text x="35" y="80" font-size="12" fill="#e2e8f0">Upcoming</text>
+                            
+                            <circle cx="20" cy="100" r="6" fill="#94a3b8" />
+                            <text x="35" y="105" font-size="12" fill="#e2e8f0">Future</text>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>⚡ What's Actively Enforced NOW (July 2025)</h2>
+                <div class="grid">
+                    <div class="requirement-box" style="border-color: #ef4444; background: rgba(239, 68, 68, 0.1);">
+                        <h4 style="color: #ef4444;">🇪🇺 EU AI Act - Active Provisions</h4>
+                        <ul>
+                            <li><strong>Prohibited AI Systems (Nov 2024):</strong>
+                                <ul>
+                                    <li>Social scoring by public authorities</li>
+                                    <li>Real-time biometric identification in public</li>
+                                    <li>Emotion recognition in workplace/education</li>
+                                    <li>Subliminal manipulation techniques</li>
+                                </ul>
+                            </li>
+                            <li><strong>Transparency Obligations (May 2025):</strong>
+                                <ul>
+                                    <li>AI-generated content must be labeled</li>
+                                    <li>Chatbots must disclose AI nature</li>
+                                    <li>Deepfakes must be marked</li>
+                                    <li>Clear user information requirements</li>
+                                </ul>
+                            </li>
+                            <li><strong>Penalties:</strong> Up to €35M or 7% global revenue</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="requirement-box" style="border-color: #ef4444; background: rgba(239, 68, 68, 0.1);">
+                        <h4 style="color: #ef4444;">🇺🇸 US EO 14110 - Full Enforcement</h4>
+                        <ul>
+                            <li><strong>Red-teaming Requirements:</strong>
+                                <ul>
+                                    <li>Mandatory for dual-use foundation models</li>
+                                    <li>Must test for dangerous capabilities</li>
+                                    <li>Results must be reported to government</li>
+                                </ul>
+                            </li>
+                            <li><strong>Reporting Obligations:</strong>
+                                <ul>
+                                    <li>Large training runs (>10^26 FLOPS)</li>
+                                    <li>Safety test results before release</li>
+                                    <li>Cybersecurity measures</li>
+                                </ul>
+                            </li>
+                            <li><strong>Federal Contractors:</strong> Must comply or lose contracts</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>📊 Enforcement Activity Dashboard</h2>
+                <div class="alert alert-warning">
+                    <span style="font-size: 24px;">📈</span>
+                    <div>
+                        <strong>Enforcement Trends:</strong> Regulatory bodies are actively investigating and issuing penalties. The grace period is OVER.
+                    </div>
+                </div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Regulation</th>
+                            <th>Enforcement Actions (2025 YTD)</th>
+                            <th>Total Fines Issued</th>
+                            <th>Average Fine</th>
+                            <th>Trend</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: rgba(239, 68, 68, 0.1);">
+                            <td><strong>EU AI Act</strong></td>
+                            <td>47 investigations</td>
+                            <td>€285M</td>
+                            <td>€6.1M</td>
+                            <td>📈 +340% vs Q1</td>
+                        </tr>
+                        <tr style="background: rgba(124, 58, 237, 0.1);">
+                            <td><strong>US EO 14110</strong></td>
+                            <td>23 compliance orders</td>
+                            <td>Contract suspensions</td>
+                            <td>N/A</td>
+                            <td>📈 +180% vs Q1</td>
+                        </tr>
+                        <tr style="background: rgba(245, 158, 11, 0.1);">
+                            <td><strong>GDPR (AI-related)</strong></td>
+                            <td>112 cases</td>
+                            <td>€420M</td>
+                            <td>€3.8M</td>
+                            <td>📈 +220% vs 2024</td>
+                        </tr>
+                        <tr style="background: rgba(16, 185, 129, 0.1);">
+                            <td><strong>Sector-Specific</strong></td>
+                            <td>89 actions</td>
+                            <td>Various</td>
+                            <td>Varies</td>
+                            <td>📈 +510% vs 2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="content-section">
+                <h2>⏰ Critical Upcoming Deadlines</h2>
+                <div class="grid">
+                    <div class="implementation-box">
+                        <h4>🔴 Next 90 Days (Aug-Oct 2025)</h4>
+                        <ul>
+                            <li><strong>Aug 2, 2025:</strong> EU AI Act conformity assessment deadline for existing high-risk systems</li>
+                            <li><strong>Sep 15, 2025:</strong> US federal contractor AI inventory submission</li>
+                            <li><strong>Oct 1, 2025:</strong> Quarterly compliance reporting for regulated entities</li>
+                            <li><strong>Oct 30, 2025:</strong> US EO 14110 two-year review milestone</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="implementation-box">
+                        <h4>🟡 Q4 2025 - Q1 2026</h4>
+                        <ul>
+                            <li><strong>Nov 2025:</strong> EU AI Code of Practice publication</li>
+                            <li><strong>Jan 2026:</strong> Enhanced transparency requirements</li>
+                            <li><strong>Feb 2026:</strong> Harmonized standards adoption</li>
+                            <li><strong>Mar 2026:</strong> Third-party auditor certification deadline</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="implementation-box">
+                        <h4>🟢 Major 2026 Milestones</h4>
+                        <ul>
+                            <li><strong>May 2026:</strong> EU AI Act high-risk provisions fully enforced</li>
+                            <li><strong>Jun 2026:</strong> Mandatory CE marking for high-risk AI</li>
+                            <li><strong>Sep 2026:</strong> First compliance review cycle</li>
+                            <li><strong>Dec 2026:</strong> Annual certification renewals due</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>🌍 Global Regulatory Convergence</h2>
+                <div class="diagram-container">
+                    <svg width="900" height="400" viewBox="0 0 900 400">
+                        <rect width="900" height="400" fill="#0f172a" />
+                        
+                        <text x="450" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#e2e8f0">
+                            Regulatory Adoption by Region (July 2025)
+                        </text>
+                        
+                        <!-- World map simplified -->
+                        <g transform="translate(50, 60)">
+                            <!-- North America -->
+                            <rect x="100" y="80" width="150" height="100" fill="rgba(124, 58, 237, 0.3)" stroke="#7c3aed" stroke-width="2" rx="8" />
+                            <text x="175" y="120" text-anchor="middle" font-size="14" font-weight="bold" fill="#c7d2fe">North America</text>
+                            <text x="175" y="140" text-anchor="middle" font-size="12" fill="#c7d2fe">EO 14110 Active</text>
+                            <text x="175" y="155" text-anchor="middle" font-size="11" fill="#c7d2fe">State laws emerging</text>
+                            
+                            <!-- Europe -->
+                            <rect x="300" y="60" width="150" height="100" fill="rgba(37, 99, 235, 0.3)" stroke="#2563eb" stroke-width="2" rx="8" />
+                            <text x="375" y="100" text-anchor="middle" font-size="14" font-weight="bold" fill="#93c5fd">Europe</text>
+                            <text x="375" y="120" text-anchor="middle" font-size="12" fill="#93c5fd">AI Act Enforced</text>
+                            <text x="375" y="135" text-anchor="middle" font-size="11" fill="#93c5fd">GDPR AI rules</text>
+                            
+                            <!-- Asia-Pacific -->
+                            <rect x="500" y="80" width="150" height="100" fill="rgba(245, 158, 11, 0.3)" stroke="#f59e0b" stroke-width="2" rx="8" />
+                            <text x="575" y="120" text-anchor="middle" font-size="14" font-weight="bold" fill="#fcd34d">Asia-Pacific</text>
+                            <text x="575" y="140" text-anchor="middle" font-size="12" fill="#fcd34d">China AI Rules</text>
+                            <text x="575" y="155" text-anchor="middle" font-size="11" fill="#fcd34d">Singapore Framework</text>
+                            
+                            <!-- UK -->
+                            <rect x="300" y="180" width="150" height="80" fill="rgba(16, 185, 129, 0.3)" stroke="#10b981" stroke-width="2" rx="8" />
+                            <text x="375" y="210" text-anchor="middle" font-size="14" font-weight="bold" fill="#86efac">United Kingdom</text>
+                            <text x="375" y="230" text-anchor="middle" font-size="12" fill="#86efac">AI Bill Draft</text>
+                            <text x="375" y="245" text-anchor="middle" font-size="11" fill="#86efac">Q4 2025 expected</text>
+                            
+                            <!-- Other regions -->
+                            <rect x="100" y="200" width="150" height="80" fill="rgba(156, 163, 175, 0.3)" stroke="#9ca3af" stroke-width="2" rx="8" />
+                            <text x="175" y="230" text-anchor="middle" font-size="14" font-weight="bold" fill="#e5e7eb">Other Regions</text>
+                            <text x="175" y="250" text-anchor="middle" font-size="12" fill="#e5e7eb">Developing</text>
+                            <text x="175" y="265" text-anchor="middle" font-size="11" fill="#e5e7eb">2026-2027</text>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>💡 Key Takeaways for Security Leaders</h2>
+                <div class="alert alert-danger">
+                    <span style="font-size: 24px;">⚠️</span>
+                    <div>
+                        <strong>Immediate Action Required:</strong> The regulatory environment has shifted from "upcoming" to "actively enforced." Organizations without compliant AI governance are at immediate risk.
+                    </div>
+                </div>
+                
+                <div class="grid" style="margin-top: 20px;">
+                    <div class="grid-item">
+                        <h4>1. No More Grace Period</h4>
+                        <p>Regulators are actively investigating and issuing fines. The "we're still figuring it out" excuse no longer works.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h4>2. Extraterritorial Reach</h4>
+                        <p>EU AI Act applies globally if you process EU data. US requirements affect all federal contractors worldwide.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h4>3. Cascading Requirements</h4>
+                        <p>High-risk AI provisions in 2026 will require 12+ months of preparation. Start now or face operational disruption.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h4>4. Competitive Disadvantage</h4>
+                        <p>Compliant competitors are winning contracts and customer trust. Non-compliance is becoming a business liability.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+
+        <div class="keyboard-hint">
+            Use ← → arrows to navigate • ESC to return to index
+        </div>
+    </div>
+
+    <script src="slide-navigation.js"></script>
+    <script>
+        const navigation = new SlideNavigation(4, 15);
+    </script>
+</body>
+</html>

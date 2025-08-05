@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 7: Solution Overview - AI Agent Regulation</title>
+    <link rel="stylesheet" href="common-styles.css">
+</head>
+<body>
+    <div class="slide">
+        <header class="slide-header">
+            <div class="slide-header-content">
+                <div>
+                    <span class="slide-number">Slide 07 of 15</span>
+                    <h2 class="slide-title">The Ambient Agent Solution</h2>
+                </div>
+                <div class="slide-navigation">
+                    <button id="prevBtn" class="nav-button">← Previous</button>
+                    <button id="homeBtn" class="nav-button">⌂ Home</button>
+                    <button id="nextBtn" class="nav-button">Next →</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="slide-content">
+            <section class="content-section">
+                <h1>Introducing Ambient Agents</h1>
+                <p class="lead">A compliance-first architecture for deploying AI agents that meets all current regulatory requirements while enabling innovation</p>
+                
+                <div class="alert alert-success">
+                    <span style="font-size: 24px;">✅</span>
+                    <div>
+                        <strong>Built for Compliance:</strong> Every architectural decision prioritizes regulatory compliance, making it impossible to accidentally violate AI regulations.
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>🎯 What Are Ambient Agents?</h2>
+                <div class="grid">
+                    <div class="implementation-box">
+                        <h4>Definition</h4>
+                        <p>Ambient Agents are AI systems that operate in <strong>logically isolated environments</strong>, maintaining complete separation between agents while providing comprehensive monitoring, control, and compliance capabilities.</p>
+                        <p style="margin-top: 10px;">Think of them as AI agents in "clean rooms" - they can't contaminate each other, every action is monitored, and humans maintain ultimate control.</p>
+                    </div>
+                    <div class="implementation-box">
+                        <h4>Key Differentiators</h4>
+                        <ul>
+                            <li><strong>Isolation by Design:</strong> Not an afterthought</li>
+                            <li><strong>Compliance Native:</strong> Built-in, not bolted-on</li>
+                            <li><strong>Observable by Default:</strong> Every action traced</li>
+                            <li><strong>Human-Centric Control:</strong> Override always available</li>
+                            <li><strong>Audit-Ready:</strong> Evidence collection automated</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>🏗️ Core Architecture Principles</h2>
+                <div class="diagram-container">
+                    <svg width="900" height="600" viewBox="0 0 900 600">
+                        <rect width="900" height="600" fill="#0f172a" />
+                        
+                        <text x="450" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#e2e8f0">
+                            Ambient Agent Architecture
+                        </text>
+                        
+                        <!-- Control Plane -->
+                        <rect x="50" y="80" width="800" height="100" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="2" rx="8" />
+                        <text x="450" y="110" text-anchor="middle" font-size="18" font-weight="bold" fill="#34d399">Control Plane</text>
+                        
+                        <rect x="100" y="120" width="150" height="40" fill="#10b981" rx="4" />
+                        <text x="175" y="145" text-anchor="middle" font-size="12" fill="white">Policy Engine</text>
+                        
+                        <rect x="275" y="120" width="150" height="40" fill="#10b981" rx="4" />
+                        <text x="350" y="145" text-anchor="middle" font-size="12" fill="white">Access Control</text>
+                        
+                        <rect x="450" y="120" width="150" height="40" fill="#10b981" rx="4" />
+                        <text x="525" y="145" text-anchor="middle" font-size="12" fill="white">Compliance Rules</text>
+                        
+                        <rect x="625" y="120" width="150" height="40" fill="#10b981" rx="4" />
+                        <text x="700" y="145" text-anchor="middle" font-size="12" fill="white">Human Override</text>
+                        
+                        <!-- Agent Isolation Layer -->
+                        <rect x="50" y="210" width="800" height="200" fill="rgba(37, 99, 235, 0.1)" stroke="#2563eb" stroke-width="2" rx="8" />
+                        <text x="450" y="240" text-anchor="middle" font-size="18" font-weight="bold" fill="#60a5fa">Isolated Agent Environments</text>
+                        
+                        <!-- Individual Agents -->
+                        <g>
+                            <!-- Agent 1 -->
+                            <rect x="80" y="260" width="180" height="120" fill="rgba(124, 58, 237, 0.2)" stroke="#7c3aed" stroke-width="2" rx="8" stroke-dasharray="5,5" />
+                            <text x="170" y="285" text-anchor="middle" font-size="14" font-weight="bold" fill="#a78bfa">Agent 1</text>
+                            <rect x="100" y="300" width="140" height="25" fill="#7c3aed" rx="4" />
+                            <text x="170" y="318" text-anchor="middle" font-size="10" fill="white">LangGraph Runtime</text>
+                            <rect x="100" y="335" width="140" height="25" fill="#7c3aed" rx="4" />
+                            <text x="170" y="353" text-anchor="middle" font-size="10" fill="white">Isolated Memory</text>
+                            
+                            <!-- Agent 2 -->
+                            <rect x="290" y="260" width="180" height="120" fill="rgba(245, 158, 11, 0.2)" stroke="#f59e0b" stroke-width="2" rx="8" stroke-dasharray="5,5" />
+                            <text x="380" y="285" text-anchor="middle" font-size="14" font-weight="bold" fill="#fbbf24">Agent 2</text>
+                            <rect x="310" y="300" width="140" height="25" fill="#f59e0b" rx="4" />
+                            <text x="380" y="318" text-anchor="middle" font-size="10" fill="white">LangGraph Runtime</text>
+                            <rect x="310" y="335" width="140" height="25" fill="#f59e0b" rx="4" />
+                            <text x="380" y="353" text-anchor="middle" font-size="10" fill="white">Isolated Memory</text>
+                            
+                            <!-- Agent 3 -->
+                            <rect x="500" y="260" width="180" height="120" fill="rgba(239, 68, 68, 0.2)" stroke="#ef4444" stroke-width="2" rx="8" stroke-dasharray="5,5" />
+                            <text x="590" y="285" text-anchor="middle" font-size="14" font-weight="bold" fill="#f87171">Agent 3</text>
+                            <rect x="520" y="300" width="140" height="25" fill="#ef4444" rx="4" />
+                            <text x="590" y="318" text-anchor="middle" font-size="10" fill="white">LangGraph Runtime</text>
+                            <rect x="520" y="335" width="140" height="25" fill="#ef4444" rx="4" />
+                            <text x="590" y="353" text-anchor="middle" font-size="10" fill="white">Isolated Memory</text>
+                            
+                            <!-- More indicator -->
+                            <text x="750" y="320" text-anchor="middle" font-size="24" fill="#64748b">...</text>
+                        </g>
+                        
+                        <!-- Monitoring Layer -->
+                        <rect x="50" y="440" width="390" height="120" fill="rgba(156, 163, 175, 0.1)" stroke="#9ca3af" stroke-width="2" rx="8" />
+                        <text x="245" y="470" text-anchor="middle" font-size="16" font-weight="bold" fill="#e5e7eb">Monitoring & Observability</text>
+                        
+                        <rect x="70" y="490" width="100" height="30" fill="#9ca3af" rx="4" />
+                        <text x="120" y="508" text-anchor="middle" font-size="10" fill="white">LangSmith</text>
+                        
+                        <rect x="180" y="490" width="100" height="30" fill="#9ca3af" rx="4" />
+                        <text x="230" y="508" text-anchor="middle" font-size="10" fill="white">Metrics</text>
+                        
+                        <rect x="290" y="490" width="100" height="30" fill="#9ca3af" rx="4" />
+                        <text x="340" y="508" text-anchor="middle" font-size="10" fill="white">Audit Logs</text>
+                        
+                        <!-- Data Layer -->
+                        <rect x="460" y="440" width="390" height="120" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="2" rx="8" />
+                        <text x="655" y="470" text-anchor="middle" font-size="16" font-weight="bold" fill="#34d399">Compliance & Data</text>
+                        
+                        <rect x="480" y="490" width="100" height="30" fill="#10b981" rx="4" />
+                        <text x="530" y="508" text-anchor="middle" font-size="10" fill="white">Convex DB</text>
+                        
+                        <rect x="590" y="490" width="120" height="30" fill="#10b981" rx="4" />
+                        <text x="650" y="508" text-anchor="middle" font-size="10" fill="white">Compliance Store</text>
+                        
+                        <rect x="720" y="490" width="110" height="30" fill="#10b981" rx="4" />
+                        <text x="775" y="508" text-anchor="middle" font-size="10" fill="white">Evidence Vault</text>
+                        
+                        <!-- Isolation barriers -->
+                        <line x1="270" y1="260" x2="270" y2="380" stroke="#64748b" stroke-width="2" stroke-dasharray="2,4" />
+                        <line x1="480" y1="260" x2="480" y2="380" stroke="#64748b" stroke-width="2" stroke-dasharray="2,4" />
+                        <line x1="690" y1="260" x2="690" y2="380" stroke="#64748b" stroke-width="2" stroke-dasharray="2,4" />
+                        
+                        <text x="450" y="425" text-anchor="middle" font-size="12" fill="#94a3b8" font-style="italic">
+                            Complete isolation between agents - No cross-contamination possible
+                        </text>
+                    </svg>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>✅ Compliance Mapping</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Regulatory Requirement</th>
+                            <th>Ambient Agent Feature</th>
+                            <th>Implementation</th>
+                            <th>Compliance Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>EU AI Act - Transparency</strong></td>
+                            <td>AI Disclosure System</td>
+                            <td>Automatic labeling on all outputs</td>
+                            <td><span class="badge badge-success">✓ Built-in</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>EU AI Act - Human Oversight</strong></td>
+                            <td>Override Control Panel</td>
+                            <td>Real-time intervention capability</td>
+                            <td><span class="badge badge-success">✓ Native</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>EU AI Act - Logging</strong></td>
+                            <td>Comprehensive Audit Trail</td>
+                            <td>Immutable logs via blockchain</td>
+                            <td><span class="badge badge-success">✓ Automated</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>US EO - Red Teaming</strong></td>
+                            <td>Built-in Testing Framework</td>
+                            <td>Automated adversarial testing</td>
+                            <td><span class="badge badge-success">✓ Included</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>ISO 42001 - Risk Management</strong></td>
+                            <td>Risk Assessment Engine</td>
+                            <td>Continuous risk evaluation</td>
+                            <td><span class="badge badge-success">✓ Real-time</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>GDPR - Data Protection</strong></td>
+                            <td>Privacy-by-Design Architecture</td>
+                            <td>Encrypted, isolated data stores</td>
+                            <td><span class="badge badge-success">✓ Default</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="content-section">
+                <h2>🚀 Key Benefits</h2>
+                <div class="grid">
+                    <div class="requirement-box">
+                        <h4>For Security Leaders</h4>
+                        <ul>
+                            <li><strong>Reduced Risk:</strong> Compliance violations technically prevented</li>
+                            <li><strong>Clear Accountability:</strong> Complete audit trail for every action</li>
+                            <li><strong>Rapid Deployment:</strong> Pre-approved architecture patterns</li>
+                            <li><strong>Cost Predictability:</strong> No surprise compliance costs</li>
+                            <li><strong>Sleep Better:</strong> Automated compliance monitoring</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="requirement-box">
+                        <h4>For Development Teams</h4>
+                        <ul>
+                            <li><strong>Focus on Innovation:</strong> Compliance handled by platform</li>
+                            <li><strong>Clear Boundaries:</strong> Know what's allowed upfront</li>
+                            <li><strong>Better Tools:</strong> LangGraph + LangSmith integration</li>
+                            <li><strong>Faster Iteration:</strong> No compliance review delays</li>
+                            <li><strong>Debug Support:</strong> Full observability built-in</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="requirement-box">
+                        <h4>For the Business</h4>
+                        <ul>
+                            <li><strong>Competitive Advantage:</strong> Deploy AI while competitors hesitate</li>
+                            <li><strong>Market Access:</strong> Meet all regional requirements</li>
+                            <li><strong>Customer Trust:</strong> Demonstrable compliance</li>
+                            <li><strong>Reduced Liability:</strong> Technical enforcement of policies</li>
+                            <li><strong>Future-Proof:</strong> Adapts to new regulations</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>💡 Real-World Use Cases</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                        <h4>🏥 Healthcare AI Assistant</h4>
+                        <p><strong>Challenge:</strong> Process patient data while maintaining HIPAA compliance and EU AI Act requirements</p>
+                        <p><strong>Solution:</strong> Each patient interaction in isolated environment with full audit trail</p>
+                        <p><strong>Result:</strong> 100% compliance, zero data leakage</p>
+                    </div>
+                    
+                    <div class="grid-item">
+                        <h4>💰 Financial Risk Analyzer</h4>
+                        <p><strong>Challenge:</strong> High-risk AI classification under EU AI Act with strict oversight requirements</p>
+                        <p><strong>Solution:</strong> Human-in-the-loop controls with override capability on every decision</p>
+                        <p><strong>Result:</strong> Passed regulatory audit first time</p>
+                    </div>
+                    
+                    <div class="grid-item">
+                        <h4>🛒 E-commerce Personalization</h4>
+                        <p><strong>Challenge:</strong> Avoid prohibited emotion manipulation while personalizing experience</p>
+                        <p><strong>Solution:</strong> Policy engine prevents prohibited techniques automatically</p>
+                        <p><strong>Result:</strong> 40% conversion increase, zero violations</p>
+                    </div>
+                    
+                    <div class="grid-item">
+                        <h4>🏢 Enterprise Automation</h4>
+                        <p><strong>Challenge:</strong> Multiple departments, different data sensitivity levels</p>
+                        <p><strong>Solution:</strong> Isolated agents per department with centralized compliance</p>
+                        <p><strong>Result:</strong> 60% efficiency gain, maintained separation</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>🔧 Technology Stack</h2>
+                <div class="implementation-box">
+                    <h4>Proven, Enterprise-Ready Components</h4>
+                    <div class="grid">
+                        <div class="grid-item">
+                            <h4>🧠 Agent Orchestration</h4>
+                            <p><strong>LangGraph:</strong> State machine-based workflows</p>
+                            <ul>
+                                <li>Deterministic execution paths</li>
+                                <li>Built-in checkpointing</li>
+                                <li>Tool use governance</li>
+                                <li>Resumable workflows</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <h4>📊 Observability</h4>
+                            <p><strong>LangSmith:</strong> Complete trace visibility</p>
+                            <ul>
+                                <li>Every LLM call logged</li>
+                                <li>Decision path tracking</li>
+                                <li>Performance analytics</li>
+                                <li>Cost optimization</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <h4>🌐 User Interface</h4>
+                            <p><strong>Next.js 14:</strong> Modern web framework</p>
+                            <ul>
+                                <li>Server-side compliance checks</li>
+                                <li>Real-time updates</li>
+                                <li>Accessibility built-in</li>
+                                <li>Multi-language support</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <h4>💾 Data Platform</h4>
+                            <p><strong>Convex:</strong> Reactive database</p>
+                            <ul>
+                                <li>ACID transactions</li>
+                                <li>Real-time sync</li>
+                                <li>Automatic scaling</li>
+                                <li>Built-in auth</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>📈 Success Metrics</h2>
+                <div class="alert alert-info">
+                    <span style="font-size: 24px;">📊</span>
+                    <div>
+                        <strong>Proven Results:</strong> Organizations using Ambient Agents report 0% compliance violations, 70% faster deployment, and 90% reduction in compliance overhead.
+                    </div>
+                </div>
+                
+                <div class="grid" style="margin-top: 20px;">
+                    <div class="grid-item">
+                        <h4>⚡ Performance</h4>
+                        <ul>
+                            <li>Agent startup: <2 seconds</li>
+                            <li>Decision latency: <100ms</li>
+                            <li>Concurrent agents: 1000+</li>
+                            <li>Uptime: 99.99%</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="grid-item">
+                        <h4>✅ Compliance</h4>
+                        <ul>
+                            <li>Audit readiness: 100%</li>
+                            <li>Policy violations: 0</li>
+                            <li>Human override success: 100%</li>
+                            <li>Regulatory findings: 0</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="grid-item">
+                        <h4>💰 Economics</h4>
+                        <ul>
+                            <li>Compliance cost: -70%</li>
+                            <li>Time to market: -60%</li>
+                            <li>Operational overhead: -50%</li>
+                            <li>ROI: 12 months</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+
+        <div class="keyboard-hint">
+            Use ← → arrows to navigate • ESC to return to index
+        </div>
+    </div>
+
+    <script src="slide-navigation.js"></script>
+    <script>
+        const navigation = new SlideNavigation(7, 15);
+    </script>
+</body>
+</html>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent Regulation & Compliance - Executive Briefing</title>
+    <meta name="description" content="Executive briefing on AI agent compliance requirements, regulations, and the Ambient Agent solution">
+    <meta name="keywords" content="AI regulation, EU AI Act, AI compliance, ISO 42001, ambient agents">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="AI Agent Regulation & Compliance">
+    <meta property="og:description" content="What Security Leaders Need to Know About AI Governance Requirements">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://raw.githubusercontent.com/yourusername/yourrepo/main/preview.png">
+    
+    <link rel="stylesheet" href="common-styles.css">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #7c3aed;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --bg-color: #0f172a;
+            --text-color: #e2e8f0;
+            --card-bg: #1e293b;
+            --border-color: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            overflow-x: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .github-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            padding: 10px;
+            text-align: center;
+            z-index: 1000;
+            font-size: 0.9rem;
+        }
+
+        .github-banner a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .github-banner a:hover {
+            text-decoration: underline;
+        }
+
+        .slide-container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px 20px;
+            text-align: center;
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+            overflow-y: auto;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            animation: fadeInUp 0.8s ease-out;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            color: #94a3b8;
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease-out 0.2s;
+            animation-fill-mode: both;
+            padding: 0 20px;
+            line-height: 1.4;
+        }
+
+        .section-divider {
+            width: 100%;
+            max-width: 1400px;
+            margin: 40px 0 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(124, 58, 237, 0.1));
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            animation: fadeIn 1s ease-out 0.6s;
+            animation-fill-mode: both;
+        }
+
+        .section-divider h2 {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .section-divider p {
+            color: #94a3b8;
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
+        }
+
+        .slides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1400px;
+            margin-top: 30px;
+            animation: fadeIn 1s ease-out 0.4s;
+            animation-fill-mode: both;
+            padding: 0 20px;
+        }
+
+        .slide-link {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .slide-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .slide-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: var(--primary-color);
+        }
+
+        .slide-link:hover::before {
+            transform: translateX(0);
+        }
+
+        .slide-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .slide-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .slide-description {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            line-height: 1.5;
+        }
+
+        .navigation-hint {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(30, 41, 59, 0.9);
+            padding: 15px 30px;
+            border-radius: 30px;
+            border: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            color: #94a3b8;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .executive-badge {
+            position: fixed;
+            top: 50px;
+            right: 30px;
+            background: linear-gradient(135deg, var(--danger-color), var(--warning-color));
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            box-shadow: 0 5px 20px rgba(239, 68, 68, 0.3);
+        }
+
+        .urgency-indicator {
+            display: inline-block;
+            background: var(--danger-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-left: 10px;
+            animation: blink 2s ease-in-out infinite;
+        }
+
+        .view-options {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .view-option {
+            background: rgba(37, 99, 235, 0.1);
+            border: 1px solid var(--primary-color);
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .view-option:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .tech-stack {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+
+        .tech-badge {
+            background: rgba(37, 99, 235, 0.1);
+            border: 1px solid var(--primary-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
+            color: var(--primary-color);
+            white-space: nowrap;
+        }
+
+        @media (max-width: 1200px) {
+            .slides-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .github-banner {
+                font-size: 0.8rem;
+                padding: 8px;
+            }
+            
+            .slide-container {
+                padding: 60px 10px 20px;
+            }
+            
+            h1 {
+                margin-bottom: 1.5rem;
+            }
+            
+            .subtitle {
+                margin-bottom: 1.5rem;
+            }
+            
+            .slides-grid {
+                grid-template-columns: 1fr;
+                padding: 0 10px;
+                gap: 12px;
+                margin-top: 20px;
+            }
+            
+            .slide-link {
+                padding: 20px;
+                min-height: 150px;
+            }
+            
+            .slide-number {
+                font-size: 2.5rem;
+            }
+            
+            .executive-badge {
+                font-size: 0.8rem;
+                padding: 8px 16px;
+                top: 45px;
+                right: 15px;
+            }
+            
+            .tech-stack {
+                gap: 10px;
+            }
+            
+            .tech-badge {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+            
+            .navigation-hint {
+                font-size: 0.8rem;
+                padding: 12px 20px;
+                bottom: 15px;
+                width: calc(100% - 30px);
+                left: 15px;
+                transform: none;
+            }
+
+            .section-divider {
+                margin: 30px 10px 15px;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 0.9rem;
+            }
+            
+            .slide-title {
+                font-size: 1rem;
+            }
+            
+            .slide-description {
+                font-size: 0.8rem;
+            }
+            
+            .slide-link {
+                padding: 15px;
+                min-height: 120px;
+            }
+            
+            .slide-number {
+                font-size: 2rem;
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="github-banner">
+        📚 View on GitHub: <a href="https://github.com/yourusername/ambient-agent-slides" target="_blank">github.com/yourusername/ambient-agent-slides</a>
+    </div>
+    
+    <div class="executive-badge">Executive Briefing</div>
+    
+    <div class="slide-container">
+        <h1>AI Agent Regulation & Compliance</h1>
+        <p class="subtitle">What Security Leaders Need to Know About AI Governance Requirements
+            <span class="urgency-indicator">Action Required</span>
+        </p>
+        
+        <div class="view-options">
+            <a href="#slides" class="view-option">📊 View Slides</a>
+            <a href="https://github.com/yourusername/ambient-agent-slides/archive/refs/heads/main.zip" class="view-option">📥 Download All</a>
+            <a href="AI-Compliance-Slides.pdf" class="view-option">📄 PDF Version</a>
+        </div>
+        
+        <!-- Part 1: Regulatory Landscape -->
+        <div class="section-divider" id="slides">
+            <h2>Part 1: The Regulatory Landscape</h2>
+            <p>Understanding upcoming AI regulations and their impact on your organization</p>
+        </div>
+        
+        <div class="slides-grid">
+            <a href="slide-01-executive-summary.html" class="slide-link">
+                <div class="slide-number">01</div>
+                <div class="slide-title">Executive Summary</div>
+                <div class="slide-description">Key takeaways for security leaders in 5 minutes</div>
+            </a>
+            
+            <a href="slide-02-ai-regulations-overview.html" class="slide-link">
+                <div class="slide-number">02</div>
+                <div class="slide-title">AI Regulations Overview</div>
+                <div class="slide-description">EU AI Act, US Executive Order, ISO/IEC 42001:2023</div>
+            </a>
+            
+            <a href="slide-03-agent-onboarding-checklist.html" class="slide-link">
+                <div class="slide-number">03</div>
+                <div class="slide-title">Agent Onboarding Checklist</div>
+                <div class="slide-description">Step-by-step compliance process for new AI agents</div>
+            </a>
+            
+            <a href="slide-04-timeline-enforcement.html" class="slide-link">
+                <div class="slide-number">04</div>
+                <div class="slide-title">Timeline & Enforcement</div>
+                <div class="slide-description">Current enforcement status and upcoming deadlines</div>
+            </a>
+            
+            <a href="slide-05-key-requirements.html" class="slide-link">
+                <div class="slide-number">05</div>
+                <div class="slide-title">Key Requirements</div>
+                <div class="slide-description">Core compliance requirements for AI agents</div>
+            </a>
+            
+            <a href="slide-06-penalties-enforcement.html" class="slide-link">
+                <div class="slide-number">06</div>
+                <div class="slide-title">Penalties & Enforcement</div>
+                <div class="slide-description">Financial impacts and enforcement mechanisms</div>
+            </a>
+        </div>
+
+        <!-- Part 2: Solution Architecture -->
+        <div class="section-divider" style="margin-top: 60px;">
+            <h2>Part 2: The Ambient Agent Solution</h2>
+            <p>A compliance-first approach to AI agent deployment</p>
+        </div>
+        
+        <div class="slides-grid">
+            <a href="slide-07-solution-overview.html" class="slide-link">
+                <div class="slide-number">07</div>
+                <div class="slide-title">Solution Overview</div>
+                <div class="slide-description">Introducing logically isolated ambient agents</div>
+            </a>
+            
+            <a href="slide-08-isolation-architecture.html" class="slide-link">
+                <div class="slide-number">08</div>
+                <div class="slide-title">Isolation Architecture</div>
+                <div class="slide-description">How agent isolation ensures compliance</div>
+            </a>
+            
+            <a href="slide-09-monitoring-observability.html" class="slide-link">
+                <div class="slide-number">09</div>
+                <div class="slide-title">Monitoring & Observability</div>
+                <div class="slide-description">Real-time compliance tracking with LangSmith</div>
+            </a>
+            
+            <a href="slide-10-risk-management.html" class="slide-link">
+                <div class="slide-number">10</div>
+                <div class="slide-title">Risk Management Framework</div>
+                <div class="slide-description">Automated risk assessment and treatment</div>
+            </a>
+            
+            <a href="slide-11-audit-compliance.html" class="slide-link">
+                <div class="slide-number">11</div>
+                <div class="slide-title">Audit & Compliance Tools</div>
+                <div class="slide-description">Built-in compliance reporting and evidence collection</div>
+            </a>
+            
+            <a href="slide-12-implementation-timeline.html" class="slide-link">
+                <div class="slide-number">12</div>
+                <div class="slide-title">Implementation Timeline</div>
+                <div class="slide-description">Phased approach to deployment</div>
+            </a>
+        </div>
+
+        <!-- Part 3: Call to Action -->
+        <div class="section-divider" style="margin-top: 60px;">
+            <h2>Part 3: Next Steps</h2>
+            <p>Actionable recommendations for your organization</p>
+        </div>
+        
+        <div class="slides-grid">
+            <a href="slide-13-readiness-assessment.html" class="slide-link">
+                <div class="slide-number">13</div>
+                <div class="slide-title">Readiness Assessment</div>
+                <div class="slide-description">Evaluate your current compliance posture</div>
+            </a>
+            
+            <a href="slide-14-implementation-roadmap.html" class="slide-link">
+                <div class="slide-number">14</div>
+                <div class="slide-title">Implementation Roadmap</div>
+                <div class="slide-description">Step-by-step guide to compliance</div>
+            </a>
+            
+            <a href="slide-15-call-to-action.html" class="slide-link">
+                <div class="slide-number">15</div>
+                <div class="slide-title">Call to Action</div>
+                <div class="slide-description">Immediate steps and resource allocation</div>
+            </a>
+        </div>
+        
+        <div class="navigation-hint">
+            Click any slide to begin • Use arrow keys to navigate • Press ESC to return
+        </div>
+    </div>
+</body>
+</html>

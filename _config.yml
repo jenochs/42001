@@ -1,0 +1,33 @@
+# GitHub Pages Configuration
+title: AI Agent Regulation & Compliance
+description: Executive Briefing on AI Agent Compliance Requirements
+theme: jekyll-theme-cayman
+baseurl: "/ambient-agent-slides" # Change this to match your repository name
+url: "" # Your GitHub Pages URL will be https://[username].github.io
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude files from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - CNAME
+
+# Site settings
+author: Your Organization
+email: contact@yourorg.com
+lang: en-US
+
+# SEO settings
+google_analytics: # Add your GA tracking ID if needed
+social:
+  name: Your Organization
+  links:
+    - https://linkedin.com/company/yourorg
+    - https://twitter.com/yourorg

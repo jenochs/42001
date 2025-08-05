@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 2: AI Regulations Overview - AI Agent Regulation</title>
+    <link rel="stylesheet" href="common-styles.css">
+</head>
+<body>
+    <div class="slide">
+        <header class="slide-header">
+            <div class="slide-header-content">
+                <div>
+                    <span class="slide-number">Slide 02 of 15</span>
+                    <h2 class="slide-title">AI Regulations Overview</h2>
+                </div>
+                <div class="slide-navigation">
+                    <button id="prevBtn" class="nav-button">← Previous</button>
+                    <button id="homeBtn" class="nav-button">⌂ Home</button>
+                    <button id="nextBtn" class="nav-button">Next →</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="slide-content">
+            <section class="content-section">
+                <h1>Global AI Regulatory Landscape</h1>
+                <p class="lead">Understanding the three pillars of AI governance that will reshape how organizations deploy AI agents</p>
+            </section>
+
+            <section class="content-section">
+                <h2>🇪🇺 EU AI Act - The Global Standard</h2>
+                <div class="alert alert-danger">
+                    <span style="font-size: 24px;">🚨</span>
+                    <div>
+                        <strong>Approved March 13, 2024:</strong> The world's first comprehensive AI regulation with extraterritorial reach. If you process EU data or offer services in the EU, this applies to you.
+                    </div>
+                </div>
+
+                <div class="requirement-box">
+                    <h4>Risk-Based Classification System</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Risk Level</th>
+                                <th>AI Agent Examples</th>
+                                <th>Requirements</th>
+                                <th>Timeline</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background: rgba(239, 68, 68, 0.1);">
+                                <td><strong>Unacceptable Risk</strong></td>
+                                <td>Social scoring agents, subliminal manipulation</td>
+                                <td>PROHIBITED</td>
+                                <td>6 months (Nov 2024)</td>
+                            </tr>
+                            <tr style="background: rgba(245, 158, 11, 0.1);">
+                                <td><strong>High Risk</strong></td>
+                                <td>HR agents, credit scoring, healthcare decisions</td>
+                                <td>Conformity assessment, CE marking</td>
+                                <td>24 months (May 2026)</td>
+                            </tr>
+                            <tr style="background: rgba(124, 58, 237, 0.1);">
+                                <td><strong>Limited Risk</strong></td>
+                                <td>Chatbots, content generation agents</td>
+                                <td>Transparency obligations</td>
+                                <td>12 months (May 2025)</td>
+                            </tr>
+                            <tr style="background: rgba(16, 185, 129, 0.1);">
+                                <td><strong>Minimal Risk</strong></td>
+                                <td>Spam filters, game AI</td>
+                                <td>Voluntary codes of conduct</td>
+                                <td>Immediate</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="grid" style="margin-top: 30px;">
+                    <div class="implementation-box">
+                        <h4>Key Obligations for AI Agents</h4>
+                        <ul>
+                            <li><strong>Article 9:</strong> Risk management system throughout lifecycle</li>
+                            <li><strong>Article 10:</strong> Data governance and management</li>
+                            <li><strong>Article 11:</strong> Technical documentation</li>
+                            <li><strong>Article 12:</strong> Record-keeping (logs)</li>
+                            <li><strong>Article 13:</strong> Transparency and user information</li>
+                            <li><strong>Article 14:</strong> Human oversight capabilities</li>
+                            <li><strong>Article 15:</strong> Accuracy, robustness, cybersecurity</li>
+                        </ul>
+                    </div>
+                    <div class="implementation-box">
+                        <h4>Penalties Structure</h4>
+                        <ul>
+                            <li><strong>Prohibited AI:</strong> €35M or 7% global revenue</li>
+                            <li><strong>Obligations breach:</strong> €15M or 3% global revenue</li>
+                            <li><strong>Incorrect information:</strong> €7.5M or 1.5% global revenue</li>
+                            <li><strong>Non-compliance orders:</strong> Daily penalties</li>
+                        </ul>
+                        <div class="alert alert-warning" style="margin-top: 15px;">
+                            <strong>Note:</strong> Penalties apply to the higher amount
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>🇺🇸 US Executive Order 14110 - Federal Framework</h2>
+                <div class="alert alert-info">
+                    <span style="font-size: 24px;">📋</span>
+                    <div>
+                        <strong>Signed October 30, 2023:</strong> Establishes AI safety and security standards for federal agencies and contractors. Focuses on dual-use foundation models and critical infrastructure.
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="requirement-box">
+                        <h4>Key Requirements</h4>
+                        <ul>
+                            <li><strong>Red-teaming:</strong> Mandatory for dual-use models</li>
+                            <li><strong>Reporting:</strong> Notify government of large training runs</li>
+                            <li><strong>Safety testing:</strong> Before public release</li>
+                            <li><strong>Watermarking:</strong> AI-generated content labeling</li>
+                            <li><strong>Cybersecurity:</strong> Protection against AI threats</li>
+                        </ul>
+                    </div>
+                    <div class="requirement-box">
+                        <h4>Affected Organizations</h4>
+                        <ul>
+                            <li>Federal contractors and suppliers</li>
+                            <li>Critical infrastructure operators</li>
+                            <li>Healthcare and financial services</li>
+                            <li>Companies using >10^26 FLOPS models</li>
+                            <li>AI service providers to government</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="diagram-container" style="margin-top: 30px;">
+                    <svg width="900" height="300" viewBox="0 0 900 300">
+                        <rect width="900" height="300" fill="#0f172a" />
+                        
+                        <text x="450" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#e2e8f0">
+                            US AI Governance Timeline
+                        </text>
+                        
+                        <!-- Timeline line -->
+                        <line x1="100" y1="150" x2="800" y2="150" stroke="#475569" stroke-width="3" />
+                        
+                        <!-- Milestones -->
+                        <g>
+                            <!-- Oct 2023 -->
+                            <circle cx="150" cy="150" r="8" fill="#2563eb" />
+                            <line x1="150" y1="150" x2="150" y2="100" stroke="#2563eb" stroke-width="2" />
+                            <rect x="100" y="70" width="100" height="30" fill="#1e293b" stroke="#2563eb" rx="4" />
+                            <text x="150" y="90" text-anchor="middle" font-size="12" fill="#e2e8f0">Oct 2023</text>
+                            <text x="150" y="180" text-anchor="middle" font-size="11" fill="#94a3b8">EO Signed</text>
+                            
+                            <!-- Jan 2024 -->
+                            <circle cx="300" cy="150" r="8" fill="#7c3aed" />
+                            <line x1="300" y1="150" x2="300" y2="100" stroke="#7c3aed" stroke-width="2" />
+                            <rect x="250" y="70" width="100" height="30" fill="#1e293b" stroke="#7c3aed" rx="4" />
+                            <text x="300" y="90" text-anchor="middle" font-size="12" fill="#e2e8f0">Jan 2024</text>
+                            <text x="300" y="180" text-anchor="middle" font-size="11" fill="#94a3b8">90-day</text>
+                            <text x="300" y="195" text-anchor="middle" font-size="11" fill="#94a3b8">Reports Due</text>
+                            
+                            <!-- Jul 2024 -->
+                            <circle cx="450" cy="150" r="8" fill="#f59e0b" />
+                            <line x1="450" y1="150" x2="450" y2="100" stroke="#f59e0b" stroke-width="2" />
+                            <rect x="400" y="70" width="100" height="30" fill="#1e293b" stroke="#f59e0b" rx="4" />
+                            <text x="450" y="90" text-anchor="middle" font-size="12" fill="#e2e8f0">Jul 2024</text>
+                            <text x="450" y="180" text-anchor="middle" font-size="11" fill="#94a3b8">270-day</text>
+                            <text x="450" y="195" text-anchor="middle" font-size="11" fill="#94a3b8">Standards</text>
+                            
+                            <!-- Oct 2024 -->
+                            <circle cx="600" cy="150" r="8" fill="#ef4444" />
+                            <line x1="600" y1="150" x2="600" y2="100" stroke="#ef4444" stroke-width="2" />
+                            <rect x="550" y="70" width="100" height="30" fill="#1e293b" stroke="#ef4444" rx="4" />
+                            <text x="600" y="90" text-anchor="middle" font-size="12" fill="#e2e8f0">Oct 2024</text>
+                            <text x="600" y="180" text-anchor="middle" font-size="11" fill="#94a3b8">1-year</text>
+                            <text x="600" y="195" text-anchor="middle" font-size="11" fill="#94a3b8">Full Implementation</text>
+                            
+                            <!-- 2025 -->
+                            <circle cx="750" cy="150" r="8" fill="#10b981" />
+                            <line x1="750" y1="150" x2="750" y2="100" stroke="#10b981" stroke-width="2" />
+                            <rect x="700" y="70" width="100" height="30" fill="#1e293b" stroke="#10b981" rx="4" />
+                            <text x="750" y="90" text-anchor="middle" font-size="12" fill="#e2e8f0">2025+</text>
+                            <text x="750" y="180" text-anchor="middle" font-size="11" fill="#94a3b8">Ongoing</text>
+                            <text x="750" y="195" text-anchor="middle" font-size="11" fill="#94a3b8">Compliance</text>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>🌐 ISO/IEC 42001:2023 - International Standard</h2>
+                <div class="alert alert-success">
+                    <span style="font-size: 24px;">✅</span>
+                    <div>
+                        <strong>Published December 2023:</strong> The world's first AI management system standard. Provides a certifiable framework for responsible AI governance.
+                    </div>
+                </div>
+
+                <div class="implementation-box">
+                    <h4>Management System Requirements</h4>
+                    <div class="grid">
+                        <div class="grid-item">
+                            <h4>Core Elements</h4>
+                            <ul>
+                                <li><strong>Section 4:</strong> Context of organization</li>
+                                <li><strong>Section 5:</strong> Leadership commitment</li>
+                                <li><strong>Section 6:</strong> Planning & risk assessment</li>
+                                <li><strong>Section 7:</strong> Support & resources</li>
+                                <li><strong>Section 8:</strong> Operational controls</li>
+                                <li><strong>Section 9:</strong> Performance evaluation</li>
+                                <li><strong>Section 10:</strong> Continuous improvement</li>
+                            </ul>
+                        </div>
+                        <div class="grid-item">
+                            <h4>AI-Specific Controls (Annex A)</h4>
+                            <ul>
+                                <li><strong>A.5:</strong> AI impact assessments</li>
+                                <li><strong>A.6:</strong> AI system lifecycle</li>
+                                <li><strong>A.7:</strong> Data governance for AI</li>
+                                <li><strong>A.8:</strong> Information for interested parties</li>
+                                <li><strong>A.9:</strong> AI system use policies</li>
+                                <li><strong>A.10:</strong> Third-party relationships</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid" style="margin-top: 30px;">
+                    <div class="grid-item">
+                        <h4>🎯 Benefits of Certification</h4>
+                        <ul>
+                            <li>Demonstrates compliance readiness</li>
+                            <li>Competitive advantage in RFPs</li>
+                            <li>Reduced regulatory scrutiny</li>
+                            <li>Framework for EU AI Act compliance</li>
+                            <li>Insurance premium reductions</li>
+                        </ul>
+                    </div>
+                    <div class="grid-item">
+                        <h4>📋 Certification Process</h4>
+                        <ol>
+                            <li>Gap assessment (2-4 weeks)</li>
+                            <li>Implementation (3-6 months)</li>
+                            <li>Internal audit (2 weeks)</li>
+                            <li>Certification audit (1-2 weeks)</li>
+                            <li>Annual surveillance audits</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>🔄 Regulatory Convergence</h2>
+                <div class="diagram-container">
+                    <svg width="900" height="500" viewBox="0 0 900 500">
+                        <rect width="900" height="500" fill="#0f172a" />
+                        
+                        <text x="450" y="40" text-anchor="middle" font-size="22" font-weight="bold" fill="#e2e8f0">
+                            How Regulations Overlap for AI Agents
+                        </text>
+                        
+                        <!-- EU AI Act circle -->
+                        <circle cx="300" cy="250" r="150" fill="rgba(37, 99, 235, 0.2)" stroke="#2563eb" stroke-width="3" />
+                        <text x="300" y="120" text-anchor="middle" font-size="16" font-weight="600" fill="#60a5fa">EU AI Act</text>
+                        
+                        <!-- US EO circle -->
+                        <circle cx="450" cy="250" r="150" fill="rgba(124, 58, 237, 0.2)" stroke="#7c3aed" stroke-width="3" />
+                        <text x="450" y="120" text-anchor="middle" font-size="16" font-weight="600" fill="#a78bfa">US EO 14110</text>
+                        
+                        <!-- ISO 42001 circle -->
+                        <circle cx="600" cy="250" r="150" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="3" />
+                        <text x="600" y="120" text-anchor="middle" font-size="16" font-weight="600" fill="#34d399">ISO 42001</text>
+                        
+                        <!-- Intersection labels -->
+                        <text x="375" y="250" text-anchor="middle" font-size="14" fill="#e2e8f0">Risk</text>
+                        <text x="375" y="265" text-anchor="middle" font-size="14" fill="#e2e8f0">Assessment</text>
+                        
+                        <text x="525" y="250" text-anchor="middle" font-size="14" fill="#e2e8f0">Transparency</text>
+                        <text x="525" y="265" text-anchor="middle" font-size="14" fill="#e2e8f0">& Logging</text>
+                        
+                        <text x="450" y="300" text-anchor="middle" font-size="14" font-weight="600" fill="#fbbf24">AI Agent</text>
+                        <text x="450" y="315" text-anchor="middle" font-size="14" font-weight="600" fill="#fbbf24">Compliance</text>
+                        
+                        <!-- Specific requirements -->
+                        <text x="200" y="250" text-anchor="middle" font-size="12" fill="#93c5fd">CE Marking</text>
+                        <text x="200" y="265" text-anchor="middle" font-size="12" fill="#93c5fd">Conformity</text>
+                        
+                        <text x="700" y="250" text-anchor="middle" font-size="12" fill="#86efac">Management</text>
+                        <text x="700" y="265" text-anchor="middle" font-size="12" fill="#86efac">System</text>
+                        
+                        <text x="450" y="180" text-anchor="middle" font-size="12" fill="#c7d2fe">Red-teaming</text>
+                        <text x="450" y="195" text-anchor="middle" font-size="12" fill="#c7d2fe">Safety Testing</text>
+                    </svg>
+                </div>
+
+                <div class="alert alert-info" style="margin-top: 20px;">
+                    <span style="font-size: 24px;">💡</span>
+                    <div>
+                        <strong>Strategic Insight:</strong> Organizations that implement ISO/IEC 42001:2023 gain a framework that satisfies ~80% of EU AI Act and US EO requirements, significantly reducing compliance burden.
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+
+        <div class="keyboard-hint">
+            Use ← → arrows to navigate • ESC to return to index
+        </div>
+    </div>
+
+    <script src="slide-navigation.js"></script>
+    <script>
+        const navigation = new SlideNavigation(2, 15);
+    </script>
+</body>
+</html>
