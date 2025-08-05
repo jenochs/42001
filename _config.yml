@@ -2,7 +2,7 @@
 title: AI Agent Regulation & Compliance
 description: Executive Briefing on AI Agent Compliance Requirements
 theme: jekyll-theme-cayman
-baseurl: "/ambient-agent-slides" # Change this to match your repository name
+baseurl: "/42001" # Change this to match your repository name
 url: "" # Your GitHub Pages URL will be https://[username].github.io
 
 # Build settings
