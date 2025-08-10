@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ISO/IEC AI Standards — Summary & Crosswalk</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #0f172a;
+    --muted: #475569;
+    --accent: #0ea5e9;
+    --chip: #e2f2fc;
+    --card: #f8fafc;
+    --border: #e2e8f0;
+  }
+  html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 20px; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 8px; }
+  p.lead { color: var(--muted); margin: 0 0 18px; }
+  .grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+  @media (min-width: 720px) { .grid { grid-template-columns: 1fr 1fr; } }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 14px; display: flex; gap: 10px; align-items: flex-start; }
+  .icon { width: 38px; height: 38px; flex: 0 0 auto; }
+  .card h3 { font-size: 1.05rem; margin: 2px 0 6px; }
+  .badge { display: inline-block; font-size: .72rem; color: var(--accent); background: var(--chip); padding: 2px 8px; border-radius: 999px; margin-left: 8px; }
+  .muted { color: var(--muted); font-size: .92rem; }
+  .why { font-weight: 500; margin-top: 6px; }
+  .table-wrap { margin-top: 16px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 10px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { border-collapse: collapse; min-width: 760px; width: 100%; }
+  th, td { border-bottom: 1px solid var(--border); text-align: left; padding: 10px 8px; vertical-align: top; }
+  th { position: sticky; top: 0; background: var(--card); font-size: .86rem; }
+  td { font-size: .9rem; }
+  .footer { margin: 18px 0 4px; font-size: .8rem; color: var(--muted); }
+  .pill { display:inline-block; padding:2px 6px; font-size:.7rem; border:1px solid var(--border); border-radius:999px; margin-right:6px; }
+  .small { font-size:.86rem; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>ISO/IEC AI Standards — Summary & Crosswalk</h1>
+    <p class="lead">Mobile-friendly, copyable overview with inline SVG illustrations. Optimized for iPhone viewing.</p>
+
+    <div class="grid">
+      <!-- 5338 -->
+      <section class="card" aria-labelledby="s5338">
+        <svg class="icon" viewBox="0 0 48 48" role="img" aria-label="Lifecycle">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0" stop-color="#0ea5e9"/>
+              <stop offset="1" stop-color="#22d3ee"/>
+            </linearGradient>
+          </defs>
+          <circle cx="24" cy="24" r="20" fill="url(#g1)" opacity=".18"></circle>
+          <path d="M16 24a8 8 0 0 1 8-8h2v-4l6 6-6 6v-4h-2a4 4 0 1 0 4 4h4a8 8 0 1 1-16 0z" fill="#0ea5e9"/>
+        </svg>
+        <div>
+          <h3 id="s5338">ISO/IEC 5338:2023 <span class="badge">Lifecycle</span></h3>
+          <p class="muted small">Process model for building, operating, and improving AI systems across the lifecycle.</p>
+          <p class="why">Why it matters: Provides the engineering “how”; plug these work products and gates into 42001.</p>
+        </div>
+      </section>
+
+      <!-- 38507 -->
+      <section class="card" aria-labelledby="s38507">
+        <svg class="icon" viewBox="0 0 48 48" role="img" aria-label="Governance">
+          <rect x="6" y="14" width="36" height="22" rx="4" fill="#0ea5e9" opacity=".15"></rect>
+          <path d="M10 20h28v2H10zm0 6h18v2H10zm0 6h12v2H10zm22-6 6 4v-8l-6 4z" fill="#0ea5e9"/>
+        </svg>
+        <div>
+          <h3 id="s38507">ISO/IEC 38507:2022 <span class="badge">Governance</span></h3>
+          <p class="muted small">Guidance for boards on roles, accountability, and oversight of AI.</p>
+          <p class="why">Why it matters: Sets board expectations that 42001 operationalizes.</p>
+        </div>
+      </section>
+
+      <!-- 22989 -->
+      <section class="card" aria-labelledby="s22989">
+        <svg class="icon" viewBox="0 0 48 48" role="img" aria-label="Definitions">
+          <circle cx="24" cy="24" r="18" fill="#22d3ee" opacity=".18"></circle>
+          <path d="M14 16h20v4H14zm0 8h14v4H14zm0 8h10v4H14zm16-4 6 4v-8l-6 4z" fill="#0ea5e9"/>
+        </svg>
+        <div>
+          <h3 id="s22989">ISO/IEC 22989:2022 <span class="badge">Concepts & Terms</span></h3>
+          <p class="muted small">Canonical AI vocabulary used across SC 42 standards.</p>
+          <p class="why">Why it matters: Keeps policies, contracts, and training consistent.</p>
+        </div>
+      </section>
+
+      <!-- 24028 -->
+      <section class="card" aria-labelledby="s24028">
+        <svg class="icon" viewBox="0 0 48 48" role="img" aria-label="Trust">
+          <path d="M24 6l14 6v10c0 8.4-6 14.8-14 16-8-1.2-14-7.6-14-16V12l14-6z" fill="#0ea5e9" opacity=".15"></path>
+          <path d="M24 12l8 3.4V22c0 5.6-3.8 10.1-8 11.2-4.2-1.1-8-5.6-8-11.2v-6.6L24 12zm0 6a3 3 0 1 0 0 6 3 3 0 0 0 0-6z" fill="#0ea5e9"></path>
+        </svg>
+        <div>
+          <h3 id="s24028">ISO/IEC TR 24028:2020 <span class="badge">Trustworthiness</span></h3>
+          <p class="muted small">Trust topics (transparency, robustness, privacy, safety, security) with pitfalls/mitigations.</p>
+          <p class="why">Why it matters: Seed library for risk controls and assurance criteria.</p>
+        </div>
+      </section>
+
+      <!-- 42001 -->
+      <section class="card" aria-labelledby="s42001">
+        <svg class="icon" viewBox="0 0 48 48" role="img" aria-label="AIMS">
+          <rect x="10" y="8" width="28" height="32" rx="6" fill="#22d3ee" opacity=".18"></rect>
+          <path d="M16 16h16v2H16zm0 6h16v2H16zm0 6h12v2H16zm17 5 5 3v-6l-5 3z" fill="#0ea5e9"/>
+        </svg>
+        <div>
+          <h3 id="s42001">ISO/IEC 42001:2023 <span class="badge">AIMS</span></h3>
+          <p class="muted small">AI Management System: policies, roles, risk, audits, continual improvement.</p>
+          <p class="why">Why it matters: Certifiable governance anchor; integrates lifecycle, trust, and impact.</p>
+        </div>
+      </section>
+
+      <!-- 42005 -->
+      <section class="card" aria-labelledby="s42005">
+        <svg class="icon" viewBox="0 0 48 48" role="img" aria-label="Impact">
+          <circle cx="24" cy="24" r="20" fill="#0ea5e9" opacity=".15"></circle>
+          <path d="M12 24h24v2H12zm10-8h4v16h-4zM18 20h4v8h-4zm12-2h4v12h-4z" fill="#0ea5e9"/>
+        </svg>
+        <div>
+          <h3 id="s42005">ISO/IEC 42005:2025 <span class="badge">Impact Assessment</span></h3>
+          <p class="muted small">AI impact assessment (AIIA) on individuals, groups, society across the lifecycle.</p>
+          <p class="why">Why it matters: Standardized impact documentation and mitigations at release/change gates.</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="table-wrap" role="region" aria-label="Crosswalk table">
+      <table>
+        <thead>
+          <tr>
+            <th>Purpose</th>
+            <th>42001 (AIMS)</th>
+            <th>38507 (Gov)</th>
+            <th>5338 (Lifecycle)</th>
+            <th>22989 (Terms)</th>
+            <th>24028 (Trust)</th>
+            <th>42005 (Impact)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Primary role</td>
+            <td>Org-wide management system & controls</td>
+            <td>Board/executive oversight</td>
+            <td>Engineering lifecycle processes</td>
+            <td>Common vocabulary</td>
+            <td>Trust topics & pitfalls</td>
+            <td>Standardized AI impact assessment</td>
+          </tr>
+          <tr>
+            <td>Scope</td>
+            <td>Organization</td>
+            <td>Governing body & leadership</td>
+            <td>System/solution</td>
+            <td>Organization</td>
+            <td>Org & system</td>
+            <td>System/use case</td>
+          </tr>
+          <tr>
+            <td>Key outputs</td>
+            <td>Policies, risk processes, audits</td>
+            <td>Governance charter, oversight practices</td>
+            <td>Lifecycle gates, work products</td>
+            <td>Defined AI terms</td>
+            <td>Trust control themes</td>
+            <td>Impact assessment reports</td>
+          </tr>
+          <tr>
+            <td>Feeds / depends on</td>
+            <td>Uses 22989; integrates 5338, 24028, 42005</td>
+            <td>Sets direction implemented by 42001</td>
+            <td>Implements 42001; triggers 42005</td>
+            <td>Underpins all</td>
+            <td>Supplies control ideas</td>
+            <td>Embedded into 5338 & 42001</td>
+          </tr>
+          <tr>
+            <td>Certification</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>No</td>
+            <td>No</td>
+            <td>No (TR)</td>
+            <td>No (guidance)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="footer">Tip: Add this page to your iPhone Home Screen for one-tap, offline-friendly access (Share → Add to Home Screen).</p>
+  </div>
+</body>
+</html>
